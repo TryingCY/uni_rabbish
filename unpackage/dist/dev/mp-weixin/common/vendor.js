@@ -8896,7 +8896,7 @@ function apiGetConsult(data) {
     hideLoading: true });
 
 }
-// 获取产品列表
+// 获取产品列表22
 function apiGetGoodsList(data) {
   return _index.default.request({
     url: '/goods',
