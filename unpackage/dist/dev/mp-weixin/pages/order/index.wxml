@@ -1,1 +1,1 @@
-<view></view>
+<view class="box"><uni-nav-bar vue-id="3bc35b9e-1" fixed="{{true}}" status-bar="{{true}}" backgroundColor="#6AC039" color="#fff" bind:__l="__l" vue-slots="{{['default']}}"><view class="tac">订单列表</view></uni-nav-bar></view>

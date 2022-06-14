@@ -45,6 +45,16 @@
 
 		}
 	],
+	"subPackages": [{
+		"root": "pages/subPackages/pages",
+		"pages": [{
+			"path": "company",
+			"style": {
+				"navigationBarTitleText": "公司简介",
+				"navigationStyle": "custom"
+			}
+		}]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

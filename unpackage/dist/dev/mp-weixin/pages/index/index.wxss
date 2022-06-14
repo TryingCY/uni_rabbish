@@ -1,3 +1,98 @@
+
+.uni-nav-bar-text.data-v-4afea59e {
+
+
+
+
+		font-size: 32rpx;
+}
+.uni-nav-bar-right-text.data-v-4afea59e {
+		font-size: 28rpx;
+}
+.uni-navbar.data-v-4afea59e {
+		width: 750rpx;
+}
+.uni-navbar__content.data-v-4afea59e {
+		position: relative;
+		width: 750rpx;
+		background-color: #ffffff;
+		overflow: hidden;
+}
+.uni-navbar__content_view.data-v-4afea59e {
+
+		display: flex;
+
+		align-items: center;
+		flex-direction: row;
+		/* background-color: #FFFFFF;
+ */
+}
+.uni-navbar__header.data-v-4afea59e {
+
+		display: flex;
+
+		flex-direction: row;
+		width: 750rpx;
+		height: 44px;
+		line-height: 44px;
+		font-size: 16px;
+		/* background-color: #ffffff;
+ */
+}
+.uni-navbar__header-btns.data-v-4afea59e {
+
+		display: flex;
+
+		flex-wrap: nowrap;
+		width: 120rpx;
+		padding: 0 6px;
+		justify-content: center;
+		align-items: center;
+}
+.uni-navbar__header-btns-left.data-v-4afea59e {
+
+		display: flex;
+
+		width: 150rpx;
+		justify-content: flex-start;
+}
+.uni-navbar__header-btns-right.data-v-4afea59e {
+
+		display: flex;
+
+		width: 150rpx;
+		padding-right: 30rpx;
+		justify-content: flex-end;
+}
+.uni-navbar__header-container.data-v-4afea59e {
+		flex: 1;
+}
+.uni-navbar__header-container-inner.data-v-4afea59e {
+
+		display: flex;
+
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		font-size: 28rpx;
+}
+.uni-navbar__placeholder-view.data-v-4afea59e {
+		height: 44px;
+}
+.uni-navbar--fixed.data-v-4afea59e {
+		position: fixed;
+		z-index: 998;
+}
+.uni-navbar--shadow.data-v-4afea59e {
+
+		box-shadow: 0 1px 6px #ccc;
+}
+.uni-navbar--border.data-v-4afea59e {
+		border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e5e5;
+}
+
 @charset "UTF-8";
 /**
  * 这里是uni-app内置的常用样式变量
@@ -24,6 +119,28 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+page,
+.page-box {
+  height: 100%;
+  background: #d7efcb;
+}
+.tac {
+  flex: 1;
+  text-align: center;
+}
+.bg {
+  height: 100%;
+  background: #d7efcb;
+}
+.g-bg {
+  width: 100%;
+  height: 300rpx;
+  background: #6ac039;
+}
+.g-bg .screen-swiper {
+  height: 300rpx;
+  min-height: initial;
+}
 .notify {
   width: 90%;
   display: flex;
@@ -50,6 +167,7 @@
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  color: #7f7e7e;
 }
 .form .subTitle .txt {
   position: relative;
@@ -105,5 +223,6 @@
 }
 .form .introduction .txt {
   display: block;
+  color: #7f7e7e;
 }
 

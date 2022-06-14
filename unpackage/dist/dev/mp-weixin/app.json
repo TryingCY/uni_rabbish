@@ -5,7 +5,14 @@
     "pages/placeOrder/index",
     "pages/account/index"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "pages/subPackages/pages",
+      "pages": [
+        "company"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

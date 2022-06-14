@@ -1,1 +1,1 @@
-<view></view>
+<view class="box"><uni-nav-bar vue-id="5f561aa3-1" fixed="{{true}}" status-bar="{{true}}" backgroundColor="#6AC039" color="#fff" bind:__l="__l" vue-slots="{{['default']}}"><view class="tac">一键下单</view></uni-nav-bar></view>

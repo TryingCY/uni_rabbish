@@ -1,41 +1,48 @@
 <template>
-	<view>
-		<!-- 首页轮播图 -->
-		<swiper class="screen-swiper square-dot" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500">
-			<swiper-item v-for="(item, index) in swiperList" :key="index"><image :src="url + item.image" mode="aspectFill"></image></swiper-item>
-		</swiper>
-		<!-- 咨询 -->
-		<view class="notify">
-			<view class="txt-box">
-				<view class="txt">祥兴</view>
-				<view class="txt">咨讯</view>
+	<view class="page-box">
+		<uni-nav-bar fixed :status-bar="true" backgroundColor="#6AC039" color="#fff"><view class="tac">首页</view></uni-nav-bar>
+
+		<view class="bg">
+			<view class="g-bg">
+				<!-- 首页轮播图 -->
+				<swiper class="screen-swiper square-dot" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000" duration="500">
+					<swiper-item v-for="(item, index) in swiperList" :key="index"><image :src="url + item.image" mode="aspectFill"></image></swiper-item>
+				</swiper>
 			</view>
-			<uni-notice-bar class="notify-bar" :show-icon="true" :scrollable="true" :single="true" backgroundColor="#6AC039" color="#000" :text="newsList" speed="20" />
+			<!-- 咨询 -->
+			<view class="notify">
+				<view class="txt-box">
+					<view class="txt">祥兴</view>
+					<view class="txt">咨讯</view>
+				</view>
+				<uni-notice-bar class="notify-bar" :show-icon="true" :scrollable="true" :single="true" backgroundColor="#6AC039" color="#000" :text="newsList" speed="20" />
+			</view>
+			<!-- 产品列表 -->
+			<form class="form">
+				<view class="subTitle">
+					<text class="txt">产品类别</text>
+					<text class="text-right">《危险废物法律法规》</text>
+				</view>
+				<view class="info">
+					<view class="item-info" v-for="(item, index) in goodsList" :key="index"><image class="item-info-img" :src="url + item.image" mode="aspectFit"></image></view>
+				</view>
+				<view class="subTitle">
+					<text class="txt">公司简介</text>
+					<text class="txt-right">《如何正确处理危废》</text>
+				</view>
+				<view class="introduction" @tap="onCompanyTap">
+					<image class="introduction-img" src="../../static/image/company.jpg" mode="scaleToFill"></image>
+					<text class="txt">闽ICP备2021013336号</text>
+				</view>
+			</form>
 		</view>
-		<!-- 产品列表 -->
-		<form class="form">
-			<view class="subTitle">
-				<text class="txt">产品类别</text>
-				<text class="text-right">《危险废物法律法规》</text>
-			</view>
-			<view class="info">
-				<view class="item-info" v-for="(item, index) in goodsList" :key="index"><image class="item-info-img" :src="url + item.image" mode="aspectFit"></image></view>
-			</view>
-			<view class="subTitle">
-				<text class="txt">公司简介</text>
-				<text class="txt-right">《如何正确处理危废》</text>
-			</view>
-			<view class="introduction" @tap="onCompanyTap">
-				<image class="introduction-img" src="../../static/image/company.jpg" mode="scaleToFill"></image>
-				<text class="txt">闽ICP备2021013336号</text>
-			</view>
-		</form>
 	</view>
 </template>
 
 <script>
 import { apiGetSwiper, apiGetConsult, apiGetGoodsList } from '@/apis/api.js'
 import uniNoticeBar from '@/components/uni-notice-bar/uni-notice-bar.vue'
+import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
 export default {
 	components: {
 		uniNoticeBar
@@ -44,7 +51,7 @@ export default {
 		return {
 			swiperList: [],
 			url: 'http://114.132.234.122:3000/',
-			newsList: [],
+			newsList: '',
 			goodsList: []
 		}
 	},
@@ -95,12 +102,40 @@ export default {
 				.catch(err => {
 					console.log(err)
 				})
+		},
+		// 点击公司简介跳转
+		onCompanyTap() {
+			uni.navigateTo({
+				url: '/pages/subPackages/pages/company'
+			})
 		}
 	}
 }
 </script>
 
 <style lang="scss">
+page,
+.page-box {
+	height: 100%;
+	background: #d7efcb;
+}
+.tac {
+	flex: 1;
+	text-align: center;
+}
+.bg {
+	height: 100%;
+	background: #d7efcb;
+}
+.g-bg {
+	width: 100%;
+	height: 300rpx;
+	background: #6ac039;
+	.screen-swiper {
+		height: 300rpx;
+		min-height: initial;
+	}
+}
 .notify {
 	width: 90%;
 	display: flex;
@@ -128,6 +163,7 @@ export default {
 		font-weight: 700;
 		display: flex;
 		justify-content: space-between;
+		color: #7f7e7e;
 		.txt {
 			position: relative;
 			padding-left: 20rpx;
@@ -184,6 +220,7 @@ export default {
 		}
 		.txt {
 			display: block;
+			color: #7f7e7e;
 		}
 	}
 }
