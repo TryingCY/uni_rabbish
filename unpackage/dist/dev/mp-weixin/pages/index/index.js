@@ -107,7 +107,7 @@ try {
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! @/components/uni-nav-bar/uni-nav-bar.vue */ 28))
     },
     uniNoticeBar: function() {
-      return __webpack_require__.e(/*! import() | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then(__webpack_require__.bind(null, /*! @/components/uni-notice-bar/uni-notice-bar.vue */ 67))
+      return __webpack_require__.e(/*! import() | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then(__webpack_require__.bind(null, /*! @/components/uni-notice-bar/uni-notice-bar.vue */ 77))
     }
   }
 } catch (e) {
@@ -247,7 +247,7 @@ var _uniNavBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni
 //
 //
 //
-var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 67));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { uniNoticeBar: uniNoticeBar }, data: function data() {return { swiperList: [], url: 'http://114.132.234.122:3000/', newsList: '', goodsList: [] };}, onLoad: function onLoad() {this.apiGetSwiper();this.apiGetConsult();this.apiGetGoodsList();}, methods: { /* makeImgUrl(path) {
+var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 77));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { uniNoticeBar: uniNoticeBar }, data: function data() {return { swiperList: [], url: 'http://114.132.234.122:3000/', newsList: '', goodsList: [] };}, onLoad: function onLoad() {this.apiGetSwiper();this.apiGetConsult();this.apiGetGoodsList();}, methods: { /* makeImgUrl(path) {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    	return +'http://114.132.234.122:3000/' + path
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }, */ // 获取轮播图
     apiGetSwiper: function apiGetSwiper() {var _this = this;(0, _api.apiGetSwiper)().then(function (res) {// console.log(res)
@@ -270,7 +270,7 @@ var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.en
     // 点击公司简介跳转
     onCompanyTap: function onCompanyTap() {
       uni.navigateTo({
-        url: '/pages/subPackages/pages/company' });
+        url: '../subPackages/company/company' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
@@ -364,10 +364,10 @@ var components
 try {
   components = {
     uniStatusBar: function() {
-      return __webpack_require__.e(/*! import() | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then(__webpack_require__.bind(null, /*! @/components/uni-status-bar/uni-status-bar.vue */ 74))
+      return __webpack_require__.e(/*! import() | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then(__webpack_require__.bind(null, /*! @/components/uni-status-bar/uni-status-bar.vue */ 84))
     },
     uniIcons: function() {
-      return Promise.all(/*! import() | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/components/uni-icons/uni-icons.vue */ 81))
+      return Promise.all(/*! import() | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/components/uni-icons/uni-icons.vue */ 91))
     }
   }
 } catch (e) {
@@ -422,7 +422,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniStatusBar = function uniStatusBar() {__webpack_require__.e(/*! require.ensure | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then((function () {return resolve(__webpack_require__(/*! ../uni-status-bar/uni-status-bar.vue */ 74));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniIcons = function uniIcons() {Promise.all(/*! require.ensure | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! ../uni-icons/uni-icons.vue */ 81));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniStatusBar = function uniStatusBar() {__webpack_require__.e(/*! require.ensure | components/uni-status-bar/uni-status-bar */ "components/uni-status-bar/uni-status-bar").then((function () {return resolve(__webpack_require__(/*! ../uni-status-bar/uni-status-bar.vue */ 84));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniIcons = function uniIcons() {Promise.all(/*! require.ensure | components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-icons/uni-icons")]).then((function () {return resolve(__webpack_require__(/*! ../uni-icons/uni-icons.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

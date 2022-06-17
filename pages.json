@@ -46,13 +46,23 @@
 		}
 	],
 	"subPackages": [{
-		"root": "pages/subPackages/pages",
+		"root": "pages/subPackages",
 		"pages": [{
-			"path": "company",
+			"path": "company/company",
 			"style": {
 				"navigationBarTitleText": "公司简介",
-				"navigationStyle": "custom"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
 			}
+
+		}, {
+			"path": "login/login",
+			"style": {
+				"navigationBarTitleText": "登录页",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
 		}]
 	}],
 	"globalStyle": {

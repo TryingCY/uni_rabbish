@@ -7,9 +7,10 @@
   ],
   "subPackages": [
     {
-      "root": "pages/subPackages/pages",
+      "root": "pages/subPackages",
       "pages": [
-        "company"
+        "company/company",
+        "login/login"
       ]
     }
   ],

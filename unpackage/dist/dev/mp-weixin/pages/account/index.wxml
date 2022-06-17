@@ -1,1 +1,1 @@
-<view></view>
+<view class="box"><uni-nav-bar vue-id="7e07d9c2-1" fixed="{{true}}" status-bar="{{true}}" backgroundColor="#6AC039" color="#fff" bind:__l="__l" vue-slots="{{['default']}}"><view class="tac">我的</view></uni-nav-bar><view data-event-opts="{{[['tap',[['goLogin',['$event']]]]]}}" class="login" bindtap="__e"><image class="img" src="../../static/image/account/notLogin.png"></image><view class="txt">请登录</view></view></view>

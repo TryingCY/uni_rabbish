@@ -106,7 +106,7 @@ export default {
 		// 点击公司简介跳转
 		onCompanyTap() {
 			uni.navigateTo({
-				url: '/pages/subPackages/pages/company'
+				url: '../subPackages/company/company'
 			})
 		}
 	}
